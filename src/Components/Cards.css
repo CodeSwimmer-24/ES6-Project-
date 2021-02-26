@@ -1,0 +1,87 @@
+.card__container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.card__body{
+    padding:10px;
+    margin: 20px;
+    /* background-color: #ff8000 !important; */
+     /* background: linear-gradient(to bottom , #5cdb95 20% ,#ff8000 80% );  */
+    background-color: #5cdb95 !important;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px !important;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 8px 2px !important;
+}
+.card__body:hover{
+    transform: scale(1.04) !important;
+    transition:  all 0.3s ease-out !important;
+}
+.card__body > h2 {
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+.card__body > .MuiSvgIcon-root{
+    font-size: 60px !important;
+    margin-left: 40%;
+    margin-top: 20px;
+    color:white !important
+}
+.card__body > p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    padding:7px;
+    color:white;
+}
+.price__button {
+   
+    background-color: #ff8000 !important;
+    font-weight: 700 !important;
+   /* width: 100%; */
+   width: 90%;
+   left: 5%;
+   margin-top: 10px !important;
+   padding:8px !important;
+   color: white !important;
+   margin-bottom:5px !important;
+}
+.price__button:hover{
+font-weight: 900 !important;
+}
+.ViewDetails__btn {
+    background-color: #ff8000!important;
+    font-weight: 700 !important;
+   /* width: 100%; */
+   width: 90%;
+   left: 5%;
+   margin-top: 10px !important;
+   padding:8px !important;
+   color: white !important;
+   margin-bottom: 10px !important;
+}
+.ViewDetails__btn:hover{
+    font-weight: 900 !important;
+}
+@media screen and (max-width: 960px) {
+    .card__container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .card__body > .MuiSvgIcon-root{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+  }
+  .btn__link {
+      text-decoration: none !important;
+  }

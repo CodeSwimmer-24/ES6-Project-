@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="416" height="212" viewBox="0 0 416 212" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clip-logo">
+      <rect width="416" height="212"/>
+    </clipPath>
+  </defs>
+  <g id="logo" clip-path="url(#clip-logo)">
+    <rect width="457.561" height="212" fill-opacity="0" style=""/>
+    <text id="Ney" transform="translate(0 5)" fill="#fff" font-size="189" font-family="MonotypeCorsiva, Monotype Corsiva" style="white-space: pre;"><tspan x="0" y="151">N</tspan><tspan y="151" font-family="FrankRuehlCLM-MediumOblique, Frank Ruehl CLM MediumOblique" font-weight="500" font-style="oblique">ey</tspan></text>
+    <path id="Path_3" data-name="Path 3" d="M 374.512 31.574 L 374.512 199.249 C 374.512 206.444 368.939 212.276 362.064 212.276 C 355.189 212.276 332.204 199.444 332.204 192.249 C 332.204 192.249 347.888 218.177 355.696 169.612 C 363.504 121.048 349.615 22.576 349.615 22.576 C 349.615 19.833 370.396 10.827 405.144 6.61 Z" fill="#5cdb95" style="" transform="matrix(0.866025, 0.5, -0.5, 0.866025, 104.114496, -169.674465)"/>
+    <path id="Path_4" data-name="Path 4" d="M 376.585 20.236 C 383.329 20.236 388.67 9.907 397.07 -2.473 L 388.135 171.619 C 388.135 178.117 383.348 222.047 376.603 222.047 C 369.858 222.047 363.671 175.876 363.671 169.377 L 353.248 -3.168 C 353.248 -9.672 369.839 20.236 376.585 20.236 Z" fill="#ff8000" style="" transform="matrix(0.850254, -0.526372, 0.526372, 0.850254, -1.183883, 213.792025)"/>
+  </g>
+</svg>
