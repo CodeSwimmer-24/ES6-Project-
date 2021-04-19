@@ -1,0 +1,68 @@
+.niyx {
+  width: 68vw;
+  margin: 0 auto;
+  background-color: white;
+  height: 60vh;
+  margin-top: -7%;
+  z-index: 99;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 20px 5px;
+  padding: 70px;
+}
+.neyx__container {
+  display: flex;
+  padding: 20px;
+  /* margin-top: 30px; */
+}
+.neyx__containerRight > img {
+  height: 368px;
+  width: 326px;
+
+  object-fit: cover;
+}
+.neyx__containerleft > h1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700 !important;
+}
+.neyx__containerleft > h1 span {
+  padding-top: 15px;
+}
+.neyx__containerleft > p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  color: #252e39;
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500 !important;
+}
+.neyx__button {
+  text-decoration: none;
+}
+.neyx__button > button {
+  margin-left: 60px;
+  margin-top: 60px;
+  background-color: #ea2329;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+  color: white;
+  font-weight: 200;
+  text-transform: initial;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+}
+.neyx__button > button:hover {
+  background-color: #252e39;
+  transition: all 0.5s ease;
+}
