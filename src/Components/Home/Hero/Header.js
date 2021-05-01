@@ -55,14 +55,14 @@ function Header() {
           slidingDelay: 100,
           shouldAutoplay: true,
           shouldDisplayButtons: false,
-          autoplayDuration: 5000,
+          autoplayDuration: 4000,
           height: "100vmin",
           transitionTimingFunction: "ease-in-out !important",
           transitionProperty: "transform !important ",
         }}
       >
         <StyledOverlayContainer>
-          <h1>NiyX Chat Booth</h1>
+          <h1>NeyX Chat Booth</h1>
           <h3>
             Slides&apos; and masks&apos; background blend mode set to luminosity
           </h3>

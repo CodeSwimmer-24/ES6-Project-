@@ -102,7 +102,7 @@ function Navbar() {
                   Contact
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   to="/team"
                   className="nav-links "
@@ -111,12 +111,11 @@ function Navbar() {
                 >
                   Team
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <NavLink
-                  to="...
-                  .."
+                  to="/quote"
                   className="nav-links "
                   onClick={closeMobleMenu}
                   activeClassName="main-nav-active"

@@ -1,13 +1,22 @@
 import React from "react";
-
+import "./Demo.css";
+import Checkout from "./Checkout";
+import MainPage from "./MainPage";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function Demo() {
   return (
-    <div className="contact">
-      <div className="contact__header"></div>
-      <div className="contact__heading">
-        <h1>Contact</h1>
+    <Router>
+      <div className="demo">
+        <Switch>
+          <Route path="/">
+            <MainPage />
+          </Route>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 

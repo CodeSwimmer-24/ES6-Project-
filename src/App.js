@@ -9,19 +9,27 @@ import Service from "./Components/Servicess/Service";
 import Demo from "./Components/DemoApp/Demo";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Home/Nav/Navbar";
+import Footer from "./Components/Home/Footer/Footer";
+import Quote from "./Components/Quote/Quote";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/quote">
+            <Navbar/>
+            <Quote />
+          </Route>
           <Route path="/service">
             <Navbar />
             <Service />
+            <Footer />
             <Footer2 />
           </Route>
           <Route path="/contact">
             <Navbar />
             <Contact />
+            <Footer />
             <Footer2 />
           </Route>
           <Route path="/team">
@@ -36,6 +44,7 @@ function App() {
           <Route path="/about">
             <Navbar />
             <About />
+            <Footer />
             <Footer2 />
           </Route>
           <Route path="/">

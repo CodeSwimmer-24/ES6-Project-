@@ -16,10 +16,10 @@ function About() {
           Bagainator and let him do the work for you!
         </h2>
       </div>
-      <div className="header__subHedding">
+      {/* <div className="header__subHedding">
         <h1>Engage with customer during their shopping journey</h1>
         <h2>Here's how Bargainator works for you:</h2>
-      </div>
+      </div> */}
       <div className="about__container">
         <div className="about__container1">
           <div className="about__container-Left">
@@ -183,7 +183,7 @@ function About() {
           remarketing features to keep potential clients in the loop, ready for
           future conversions
         </p>
-        <img src="https://i.dlpng.com/static/png/319671_preview.png" />
+        <img src="https://miro.medium.com/max/920/1*Ws3f125W8LHiWlZO0pap9w.jpeg" />
       </div>
       <div className="about__lastSection">
         <div className="section__left">

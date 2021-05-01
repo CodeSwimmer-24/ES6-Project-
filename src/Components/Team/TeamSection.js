@@ -11,7 +11,7 @@ function Team({ name, post, image, work, summary, gif }) {
     <div className="team">
       {state.visible ? (
         <div className="team__secondSection">
-          <img src={image} />
+          <img src={image} alt="team" />
           <div className="team__summary">
             <CancelIcon
               className="cancle__btn"
@@ -40,8 +40,8 @@ function Team({ name, post, image, work, summary, gif }) {
         <div className="team__mainSection">
           {" "}
           <img
+            alt="team"
             src={image}
-            
             onClick={() => {
               setState({ visible: !state.visible });
             }}

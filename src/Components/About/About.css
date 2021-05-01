@@ -385,17 +385,17 @@
 .about__footer {
   height: 60vh;
   width: 100%;
-  background-image: linear-gradient(to left, #292f45, #252e39);
+  background-color: #eaeef9;
   text-align: center;
 }
 .about__footer > h1 {
-  color: white;
+  color: #292f45;
   padding: 30px;
   padding-top: 80px;
   font-family: "Raleway", sans-serif;
 }
 .about__footer > h3 {
-  color: white;
+  color: #292f45;
   padding: 30px;
   font-family: "Raleway", sans-serif;
 }

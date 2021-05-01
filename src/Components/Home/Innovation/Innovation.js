@@ -1,12 +1,14 @@
 import React from "react";
 import "./Innovation.css";
-import { Link } from "react-router-dom";
 import CheckCircleOutlinedIcon from "@material-ui/icons/CheckCircleOutlined";
 function Innovation() {
   return (
     <div className="innovation">
       <div className="immovation__image">
-        <img src="https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg" />
+        <img
+          src="https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg"
+          alt="innovation"
+        />
         <h1>Come on, let me show a clip of the future in the next Side</h1>
         <h2>Throughout the Country</h2>
       </div>

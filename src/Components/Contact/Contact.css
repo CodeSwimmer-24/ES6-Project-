@@ -1,6 +1,7 @@
 .contact__header {
   background-color: #eaeff9;
   height: 100px;
+  width: 100%;
 }
 .contact__heading {
   display: flex;

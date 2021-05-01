@@ -1,0 +1,145 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  min-width: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  text-decoration: none !important;
+}
+.product__info {
+  height: 100px;
+  margin-bottom: 10px;
+}
+.product__info > h2 {
+  color: #292f45;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+}
+.product__price > small {
+  color: #292f45;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.product__price > strong {
+  color: #292f45;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  padding: 7px;
+}
+.product__rating {
+  display: flex;
+}
+.product__rating > .MuiSvgIcon-root {
+  color: gold;
+  padding: 7px;
+}
+.product__image {
+  max-height: 250px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.product__image:hover {
+  transform: scale(1.08);
+  transition: all 0.5s ease-out;
+}
+.product__button {
+  width: 100%;
+  background-color: #292f45 !important;
+
+  font-family: "Raleway", sans-serif !important;
+  color: white !important;
+}
+.product__button:hover {
+  width: 100%;
+  background-color: #292f45;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+.productView {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  flex-direction: row;
+}
+.productView__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productView__image > img {
+  height: 400px;
+  padding: 20px;
+}
+.productView__info {
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+  width: 50%;
+  object-fit: cover;
+}
+.productView__info > h1 {
+  color: #292f45;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+  font-weight: 500;
+}
+.productView__info > h4 {
+  margin-top: 10px;
+  color: #ea2329;
+  font-family: "Raleway", sans-serif;
+}
+.productView__info > p {
+  color: #292f45;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+  margin-top: 15px;
+  text-align: left;
+}
+.productView__btn1 {
+  width: 70%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #292f45;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.productView__btn2 {
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #292f45;
+  color: #292f45;
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+}
+.productView__share {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ea2329;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+.chatboot {
+  width: 200px;
+  height: 300px;
+  background-color: #292f45;
+}

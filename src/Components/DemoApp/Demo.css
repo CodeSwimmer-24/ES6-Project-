@@ -1,6 +1,4 @@
-.header__headding {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.demo {
+  width: 100%;
+  background-image: linear-gradient(to right, #ccd8f1, #ccd8f1);
 }

@@ -103,7 +103,7 @@ function Service() {
             <h4>250$ per month</h4>
           </div>
           <div className="pricing__card">
-            <FaFire className="pricing__icons" />
+            <BsXDiamondFill className="pricing__icons" />
             <h1>Basic Plan</h1>
             <h2>15 Hours a Month</h2>
             <p>
@@ -114,7 +114,7 @@ function Service() {
             <h4>250$ per month</h4>
           </div>
           <div className="pricing__card">
-            <FaFire className="pricing__icons" />
+            <GiCrystalize className="pricing__icons" />
             <h1>Basic Plan</h1>
             <h2>15 Hours a Month</h2>
             <p>
@@ -127,7 +127,10 @@ function Service() {
         </div>
       </div>
       <div className="service__image">
-        <img src="https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg" />
+        <img
+          src="https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg"
+          alt="services"
+        />
         <div className="service__planHeading">
           <h1>Plan</h1>
           <p>
