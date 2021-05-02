@@ -141,7 +141,6 @@
 .service__planHeading {
   display: flex;
   flex-direction: column;
-
   text-align: center;
 }
 .service__planHeading > h1 {
