@@ -1,30 +1,31 @@
 .quote__container > img {
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
-    opacity: 0.6;
+  width: 100%;
+  height: 88vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
 }
 .quote__container > h1 {
-    display: grid;
-    place-items: center;
-    padding-top: 180px;
-    font-size: 45px;
-    color: #292f45;
-    font-family: "Raleway", sans-serif;
+  display: grid;
+  place-items: center;
+  padding-top: 180px;
+  font-size: 45px;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
 .quote__container > p {
-   display: flex;
-    width: 50%;
-    justify-content: center;
-    margin:0 auto;
-    text-align: center;
-    align-items: center;
-    padding-top: 30px;
-    font-size: 25px;
-    color: #292f45;
-    font-family: "Raleway", sans-serif;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  padding-top: 30px;
+  font-size: 25px;
+  color: white;
+  font-family: "Raleway", sans-serif;
 }
-.form{
-    margin-top: 15vh;
+.form {
+  margin-top: 15vh;
 }

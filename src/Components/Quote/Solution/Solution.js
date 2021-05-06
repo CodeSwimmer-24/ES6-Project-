@@ -67,11 +67,7 @@ function Solution() {
           </p>
         </div>
       </div>
-      <div>
-        <Link to="..." className="solution__seepricing-btn">
-          <button>See Pricing</button>
-        </Link>
-      </div>
+      <div></div>
     </div>
   );
 }

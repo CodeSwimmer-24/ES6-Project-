@@ -77,7 +77,7 @@ function Header() {
             backgroundBlendMode: "luminosity",
             maskBackgroundBlendMode: "luminosity",
             backgroundImage:
-              "https://99chats.com/wp-content/uploads/2020/01/online-chat.png",
+              "https://quizbreaker-web.s3.amazonaws.com/26/remote-team-building-activities.png",
           }}
         />
 
@@ -101,7 +101,7 @@ function Header() {
             backgroundBlendMode: "luminosity",
             maskBackgroundBlendMode: "luminosity",
             backgroundImage:
-              "https://isoupdate.com/wp-content/uploads/2016/03/business-05.jpg",
+              "https://blog.bonus.ly/hubfs/team-building-activities-banner.png",
           }}
         />
 
@@ -116,14 +116,7 @@ function Header() {
               "https://www.acquisition-international.com/wp-content/uploads/2020/03/How-to-Grow-Your-Business.jpg",
           }}
         />
-
         <ButtonsNav />
-        <SideNav
-          position={{
-            top: "0",
-            right: "0",
-          }}
-        />
       </HeroSlider>
     </div>
   );

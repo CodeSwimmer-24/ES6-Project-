@@ -1,0 +1,47 @@
+.quote__footer {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  background-color: rgba(41, 47, 69, 0.6);
+}
+.quote__footer > img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.75;
+}
+.quote__footer > h1 {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+}
+.quote__btn {
+  display: flex;
+  justify-content: center;
+}
+.quote__contactbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  margin-top: 50px;
+}
+.quote__contactbtn {
+  background-color: #ea2329 !important;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  color: white !important;
+  font-size: 18px !important;
+  word-spacing: 2px;
+}
+.quote__contactbtn:hover {
+  background-color: white !important;
+  color: #ea2329 !important;
+  font-weight: 600 !important;
+}

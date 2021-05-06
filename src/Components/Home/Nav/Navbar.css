@@ -88,8 +88,8 @@
   text-transform: inherit;
 }
 .nav-links > button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: red;
+  color: #fff;
 }
 .nav-links:hover {
   /* border-bottom: 4px solid !important; */

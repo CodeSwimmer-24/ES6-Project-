@@ -17,8 +17,10 @@ function App() {
       <Router>
         <Switch>
           <Route path="/quote">
-            <Navbar/>
+            <Navbar />
             <Quote />
+            <Footer />
+            <Footer2 />
           </Route>
           <Route path="/service">
             <Navbar />
