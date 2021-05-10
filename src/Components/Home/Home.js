@@ -7,8 +7,10 @@ import Footer from "./Footer/Footer";
 import Footer2 from "./Footer/Footer2";
 import Header from "./Hero/Header";
 import Navbar from "./Nav/Navbar";
+import TeamHome from "./TeamHome/TeamHome";
 function home() {
-  return (// Kya hua kuch kaam nahi kr raha kaha chale gai app ??
+  return (
+    // Kya hua kuch kaam nahi kr raha kaha chale gai app ??
     <div>
       <Navbar />
       <Header />
@@ -16,6 +18,7 @@ function home() {
       <Solution />
       <Innovation />
       <Faq />
+      <TeamHome />
       <Footer />
       <Footer2 />
     </div>
