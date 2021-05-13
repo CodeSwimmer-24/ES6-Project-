@@ -35,19 +35,21 @@ function Testimonial() {
       <p>What People Says About Us</p>
 
       <HeroSlider
-        slidingAnimation="top_to_bottom"
-        orientation="horizontal"
-        initialSlide={1}
+        // slidingAnimation="top_to_bottom"
+        // orientation="horizontal"
+        // initialSlide={1}
         style={{
           color: "#292f45",
         }}
         settings={{
-          slidingDuration: 600,
+          slidingDuration: 400,
           slidingDelay: 100,
           shouldAutoplay: true,
           shouldDisplayButtons: false,
           autoplayDuration: 4000,
           height: "70vmin",
+          transitionTimingFunction: "ease-in-out !important",
+          transitionProperty: "transform !important ",
         }}
       >
         <Slide

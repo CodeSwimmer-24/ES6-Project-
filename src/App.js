@@ -37,7 +37,7 @@ function App() {
           <Route path="/team">
             <Navbar />
             <Team />
-            <Footer2 />
+            {/* <Footer2 /> */}
           </Route>
           <Route path="/demo">
             <Navbar />
