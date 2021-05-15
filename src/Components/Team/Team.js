@@ -177,6 +177,19 @@ function Team() {
           </div>
         </div>
       </div>
+      <div className="team__culture">
+        <div className="culture__left">
+          <h1>Our Culture</h1>
+          <p>
+            We're a close-knit team of enthusiastic marketers, strategists,
+            creators, and educators. Think you'll fit in just fine?
+          </p>
+          <h3>join our team</h3>
+        </div>
+        <div className="culture__right">
+          <img src="https://media.glassdoor.com/l/1469777/hr-team-group-fr-office.jpg" />
+        </div>
+      </div>
     </div>
   );
 }

@@ -44,7 +44,9 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             {/* <img src={logo} className="logo" /> */}
-            <h2>Ney X</h2>
+            <h2>
+              Ney <i>X</i>{" "}
+            </h2>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <li className={click ? "fas fa-times" : "fas fa-bars"} />

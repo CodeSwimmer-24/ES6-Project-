@@ -264,3 +264,42 @@
   font-size: 25px;
   font-family: "Raleway", sans-serif;
 }
+.team__culture {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+}
+.culture__right {
+  width: 60%;
+}
+.culture__right > img {
+  height: 70vh;
+}
+.culture__left {
+  width: 50%;
+  background-color: white;
+  margin-right: -88px;
+  position: relative;
+  padding: 50px;
+  height: 30vh;
+}
+.culture__left > h1 {
+  padding-left: 80px;
+  color: #252e39;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+.culture__left > p {
+  padding-left: 80px;
+  padding-top: 20px;
+  color: #252e39;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+}
+.culture__left > h3 {
+  padding-left: 80px;
+  padding-top: 20px;
+  color: #252e39;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+}

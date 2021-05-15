@@ -62,6 +62,28 @@ function TeamMember() {
           </div>
         </div>
       </div>
+      <div className="teamMember__line3">
+        <div className="profile3">
+          <img src="https://static.wixstatic.com/media/6b4b47_0afd71d28dc24a58a93c0d68254fe71f~mv2.jpg/v1/fill/w_640,h_956,fp_0.50_0.50,q_90/6b4b47_0afd71d28dc24a58a93c0d68254fe71f~mv2.jpg" />
+          <h2>Bree Schmidt</h2>
+          <p>SEO & WEB ANALYTICS </p>
+        </div>
+        <div className="profile3">
+          <img src="https://www.ofih.com.my/wp-content/uploads/2018/01/img-team-member-career-03.jpg" />
+          <h2>Bree Schmidt</h2>
+          <p>CONTENT STRATEGIST</p>
+        </div>
+        <div className="profile3">
+          <img src="https://davidemphotography.com/wp-content/uploads/2019/08/Mens-Fashion-Influencer-Photoshoot-in-Seattle-4.jpg" />
+          <h2>EDITORIAL MANAGER</h2>
+          <p>HEAD OF DEVELOPMENT</p>
+        </div>
+        <div className="profile3">
+          <img src="https://nextluxury.com/wp-content/uploads/Scarves-Fashion-Accessories-For-Men.jpg" />
+          <h2>Bree Schmidt</h2>
+          <p>EDITORIAL MANAGER</p>
+        </div>
+      </div>
     </div>
   );
 }

@@ -133,8 +133,6 @@
   display: flex;
   margin: 0 auto;
 }
-.about__container-right3 {
-}
 .about__container-right3 > img {
   height: 450px;
   object-fit: contain;
