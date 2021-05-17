@@ -1,0 +1,298 @@
+.job__container {
+  display: flex;
+}
+.job__poster > img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.job__poster > h1 {
+  font-size: 60px;
+  max-width: 50%;
+  padding-top: 90px;
+  padding-left: 90px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.job__poster > p {
+  font-size: 30px;
+  max-width: 50%;
+  padding-top: 40px;
+  padding-left: 90px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.job__inputs {
+  width: 40%;
+  padding-top: 100px;
+}
+.job__input > input {
+  width: 90%;
+  bottom: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  padding-bottom: 6px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+.job__input > input:focus {
+  outline-width: 0;
+}
+.job__input > span {
+  position: absolute;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  margin-top: -15px;
+  margin-left: -288px;
+  pointer-events: none;
+  transition: 0.5s;
+  color: white;
+}
+.job__input > input:focus ~ span,
+.job__input > input:valid ~ span,
+.job__input > textarea:focus ~ span,
+.job__input > textarea:valid ~ span {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  transform: translateY(-20px);
+  color: white;
+  font-weight: 600;
+}
+.job__inputs > button {
+  background-color: #ea2329;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: white;
+  text-transform: initial;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+.job__inputs > button:hover {
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: red;
+  font-weight: 600;
+  text-transform: initial;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.job__container2 {
+  width: 100%;
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+.job__about {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.job__aboutText {
+  position: relative;
+  z-index: 99;
+  margin-top: 20px;
+  width: 40%;
+  margin-left: 0px;
+  padding: 40px;
+  height: 40vh;
+  width: 50%;
+  background-color: white;
+}
+.job__aboutText > h2 {
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+.job__aboutText > p {
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+
+.job__aboutImage > img {
+  margin-top: 150px;
+  height: 30vh;
+}
+.job__container3 {
+  width: 80%;
+  margin: 0 auto;
+}
+.job__containerImages {
+  display: flex;
+}
+.job__containerImage1 {
+  background-image: url("https://penji.co/wp-content/uploads/2020/06/What-On-Demand-Graphic-Design-Services-Offer-1024x538.jpg");
+  height: 50vh;
+  object-fit: contain;
+}
+.job__containerImage1:hover {
+  transform: scale(1.06);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.job__containerImage1 > h1 {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__containerImage1 > p {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.job__containerImage2 {
+  background-image: url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2020/01/11140027/send-email-1024x512.png");
+  height: 50vh;
+  object-fit: contain;
+}
+.job__containerImage2:hover {
+  transform: scale(1.06);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.job__containerImage2 > h1 {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__containerImage2 > p {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.job__container3 {
+  display: flex;
+}
+.job__imageContainer3 {
+  background-image: url("https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX33373882.jpg");
+  height: 50vh;
+  object-fit: contain;
+  width: 50%;
+}
+.job__imageContainer3:hover {
+  transform: scale(1.06);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.job__imageContainer4 {
+  background-image: url("https://www.youth.gov.hk/html/www/en/images/career-and-study/stories/cover-photo/career_summerjobsearch_900.jpg");
+  height: 50vh;
+  object-fit: contain;
+  width: 50%;
+  margin-bottom: 100px;
+}
+.job__imageContainer4:hover {
+  transform: scale(1.06);
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.job__imageContainer3 > h1 {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__imageContainer3 > p {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.job__imageContainer4 > h1 {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__imageContainer4 > p {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.job__details {
+  margin-left: 100px;
+}
+.job__details > h1 {
+  width: 80%;
+  padding: 30px;
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__footer {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.jon__footerleft > p {
+  width: 80%;
+  color: #252e39;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+.join__footerRight {
+  display: flex;
+  align-items: center;
+}
+.job__found {
+  padding-right: 50px;
+}
+.job__found > p {
+  color: #252e39;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.job__found > h1 {
+  color: #252e39;
+  font-size: 35px;
+  font-family: "Raleway", sans-serif;
+}
+.job__footer-Poster {
+  background-image: url("https://images.unsplash.com/photo-1593062096033-9a26b09da705?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGVza3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  height: 80vh;
+  width: 100%;
+  object-fit: contain;
+}
+.job__footer-Poster > h2 {
+  width: 90%;
+  padding: 70px;
+  color: white;
+  font-weight: 500;
+  font-size: 45px;
+  font-family: "Raleway", sans-serif;
+}
+.job__footer-Poster > p {
+  width: 90%;
+  padding-left: 70px;
+  color: white;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}

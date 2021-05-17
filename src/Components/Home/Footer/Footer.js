@@ -1,4 +1,4 @@
-import { Link } from "@material-ui/core";
+import { Link } from "react-router-dom";
 import MailIcon from "@material-ui/icons/Mail";
 import CallIcon from "@material-ui/icons/Call";
 import React from "react";
@@ -27,9 +27,12 @@ function Footer() {
         </div>
         <div className="footer-heading footer-2">
           <h2>Contact US</h2>
-          <Link className="link" to="/about">
+          {/* <Link className="link" to="/job">
             Job
-          </Link>
+          </Link> */}
+          <td className="link" onClick={() => window.open("/job", "_blank")}>
+            Job
+          </td>
           <Link className="link" to="/about">
             Support
           </Link>

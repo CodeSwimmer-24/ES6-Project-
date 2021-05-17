@@ -6,27 +6,42 @@ function TeamHome() {
     <div className="team">
       <h1>Meet our leadership team.</h1>
       <div className="team__container">
-        <a href="/team" className="team__profiles">
-          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
-          <h3>Annel Bhusri</h3>
-          <p>Co-Founder, Co-CEO</p>
-        </a>
-        <Link to="/team" className="team__profiles">
+        <td
+          className="team__profiles"
+          onClick={() => window.open("/team", "_blank")}
+        >
           <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
 
           <h3>Annel Bhusri</h3>
           <p>Co-Founder, Co-CEO</p>
-        </Link>
-        <Link to="/team" className="team__profiles">
+        </td>
+        <td
+          className="team__profiles"
+          onClick={() => window.open("/team", "_blank")}
+        >
           <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+
           <h3>Annel Bhusri</h3>
           <p>Co-Founder, Co-CEO</p>
-        </Link>
-        <Link to="/team" className="team__profiles">
+        </td>
+        <td
+          className="team__profiles"
+          onClick={() => window.open("/team", "_blank")}
+        >
           <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+
           <h3>Annel Bhusri</h3>
           <p>Co-Founder, Co-CEO</p>
-        </Link>
+        </td>
+        <td
+          className="team__profiles"
+          onClick={() => window.open("/team", "_blank")}
+        >
+          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+
+          <h3>Annel Bhusri</h3>
+          <p>Co-Founder, Co-CEO</p>
+        </td>
       </div>
     </div>
   );

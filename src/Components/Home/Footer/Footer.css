@@ -36,7 +36,8 @@
 }
 .link:hover {
   color: #ea2329 !important;
-  font-weight: 600;
+  font-weight: 500;
+  border-bottom: 1px solid #ea2329;
 }
 .footer-email-form > input {
   margin-top: 2rem;
@@ -61,7 +62,7 @@
   font-size: 1rem;
 }
 .footer-email-form > button:hover {
-  background-color: #5cdb95;
+  background-color: red;
   cursor: pointer;
   transition: all 0.4s ease-out;
 }

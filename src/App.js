@@ -11,11 +11,17 @@ import Home from "./Components/Home/Home";
 import Navbar from "./Components/Home/Nav/Navbar";
 import Footer from "./Components/Home/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
+import Job from "./Components/JobPage/Job";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/job">
+            <Job />
+            <Footer />
+            <Footer2 />
+          </Route>
           <Route path="/quote">
             <Navbar />
             <Quote />
