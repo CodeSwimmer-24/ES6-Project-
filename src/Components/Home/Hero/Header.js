@@ -1,125 +1,33 @@
-import React from "react";
+import { Button } from '@material-ui/core';
+import React from 'react'
+import { Link } from 'react-router-dom';
 import "./Header.css";
-import styled from "styled-components";
-import HeroSlider, {
-  Slide,
-  SideNav,
-  ButtonsNav,
-  OverlayContainer,
-} from "hero-slider";
-// import { H2, H3 } from "components/UI/Text";
-const StyledOverlayContainer = styled(OverlayContainer)`
-  &&& {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.02);
-   
-    back
-    text-align: center;
-    H1 {
-      color: #292f45;
-      font-size: 60px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 700;
-    }
-    H3 {
-      margin: 0 36px;
-      font-weight: 600;
-      font-size: 20px;
-      font-family: "Roboto", sans-serif;
-    }
-  }
-`;
 function Header() {
   return (
-    <div>
-      <HeroSlider
-        // slidingAnimation="fade"
-        // orientation="horizontal"
-        // initialSlide={1}
-        style={{
-          backgroundColor: "#000",
-          color: "#252e39",
-          fontWeight: "900",
-          marginTop: "-80px",
-          position: "relative",
-          fontSize: "22px",
-        }}
-        settings={{
-          slidingDuration: 400,
-          slidingDelay: 100,
-          shouldAutoplay: true,
-          shouldDisplayButtons: false,
-          autoplayDuration: 4000,
-          height: "100vmin",
-          transitionTimingFunction: "ease-in-out !important",
-          transitionProperty: "transform !important ",
-        }}
-      >
-        <StyledOverlayContainer>
-          <h1>NeyX Chat Booth</h1>
-          <h3>
-            Slides&apos; and masks&apos; background blend mode set to luminosity
-          </h3>
-          <h3>Slides&apos; shouldRenderMask prop set to true</h3>
-        </StyledOverlayContainer>
-
-        <Slide
-          shouldRenderMask
-          navDescription="Rocky Waterfall"
-          background={{
-            // backgroundColor: "#2D7791",
-            backgroundBlendMode: "luminosity",
-            maskBackgroundBlendMode: "luminosity",
-            backgroundImage:
-              "https://quizbreaker-web.s3.amazonaws.com/26/remote-team-building-activities.png",
-          }}
-        />
-
-        <Slide
-          shouldRenderMask
-          navDescription="Palau - Pacific Ocean"
-          background={{
-            // backgroundColor: "#8A8A8A",
-            backgroundBlendMode: "luminosity",
-            maskBackgroundBlendMode: "luminosity",
-            backgroundImage:
-              "https://specials-images.forbesimg.com/imageserve/602962a5211c1ba898c7f6a6/960x0.jpg?fit=scale",
-          }}
-        />
-
-        <Slide
-          shouldRenderMask
-          navDescription="Quepos - Costa Rica"
-          background={{
-            // backgroundColor: "#EA2329",
-            backgroundBlendMode: "luminosity",
-            maskBackgroundBlendMode: "luminosity",
-            backgroundImage:
-              "https://blog.bonus.ly/hubfs/team-building-activities-banner.png",
-          }}
-        />
-
-        <Slide
-          shouldRenderMask
-          navDescription="Mountain View"
-          background={{
-            // backgroundColor: "#292f45",
-            backgroundBlendMode: "luminosity",
-            maskBackgroundBlendMode: "luminosity",
-            backgroundImage:
-              "https://www.acquisition-international.com/wp-content/uploads/2020/03/How-to-Grow-Your-Business.jpg",
-          }}
-        />
-        <ButtonsNav />
-      </HeroSlider>
+    <>
+    <div className="hero__container">
+      <div className="hero__text">
+         <h1>When it comes to<span> trading</span></h1>
+         <h1>meet NiyX the only solution.</h1>
+         <h3>My name is fahad mahmood and i am creating this whole user interface.</h3>
+         <div className="hero__button">
+           <Link to="" className="hero__joinUs">
+         <Button>Join Us</Button>
+         </Link>
+         <Link to="" className="hero__viewMore">
+         <Button>View More</Button>
+         </Link>
+      </div>
+      </div>
+      <div className="hero__image">
+      <img src="https://exeleonmagazine.com/wp-content/uploads/2020/02/isometric-business-people-meeting_23-2148289514.jpg"/>
+      </div>
+      <div className="hero__button">
+      </div>
     </div>
-  );
+
+    </>
+  )
 }
 
-export default Header;
+export default Header
