@@ -115,7 +115,7 @@ function Navbar() {
                 </NavLink>
               </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   to="/quote"
                   className="nav-links "
@@ -124,7 +124,7 @@ function Navbar() {
                 >
                   <Button>Get A Quote</Button>
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

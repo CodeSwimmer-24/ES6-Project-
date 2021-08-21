@@ -44,7 +44,7 @@
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #252e39;
+  background-color:  #ea2329;
   color: white ;
   font-weight: 600;
   text-transform: initial;
@@ -52,7 +52,7 @@
   box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px 5px;
 }
 .hero__joinUs > button:hover {
-  background-color: #ea2329;
+  background-color:#252e39 ;
   color: white;
 }
 .hero__viewMore{

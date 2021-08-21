@@ -12,7 +12,7 @@ function Header() {
          <h3>My name is fahad mahmood and i am creating this whole user interface.</h3>
          <div className="hero__button">
            <Link to="" className="hero__joinUs">
-         <Button>Join Us</Button>
+         <Button>Join Beta</Button>
          </Link>
          <Link to="" className="hero__viewMore">
          <Button>View More</Button>
