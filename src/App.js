@@ -12,11 +12,17 @@ import Navbar from "./Components/Home/Nav/Navbar";
 import Footer from "./Components/Home/Footer/Footer";
 import Quote from "./Components/Quote/Quote";
 import Job from "./Components/JobPage/Job";
+import Beta from "./Components/BetaPage/Beta";
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/beta">
+            <Navbar />
+            <Beta />
+            <Footer />
+          </Route>
           <Route path="/job">
             <Job />
             <Footer />

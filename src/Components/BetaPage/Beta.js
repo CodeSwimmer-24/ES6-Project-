@@ -1,17 +1,16 @@
 import React from "react";
 import Features from "./Components/Features";
-import BetaHeader from "./Components/BetaHeader";
-import BetaIntro from "./Components/BetaIntro";
-import BetaStats from "./Components/BetaStats";
-import "./Beta.css";
+import Header from "./Components/Header";
+import Intro from "./Components/Intro";
+import Stats from "./Components/Stats";
 
 export default () => {
   return (
     <>
-      <BetaHeader />
+      <Header />
       <Features />
-      <BetaIntro />
-      <BetaStats />
+      <Intro />
+      <Stats />
     </>
   );
 };

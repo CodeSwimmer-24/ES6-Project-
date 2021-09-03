@@ -1,9 +1,10 @@
 import React from "react";
 import Feature from "./Feature";
+import { FeatureBox } from "./Features.style";
 
-export default (props) => {
+export default () => {
   return (
-    <div className="featureBox">
+    <FeatureBox>
       <Feature
         icon="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/o-saas/ad2e7f73-o-saas-benefit-icon-01.svg"
         title="Understand every step of the way"
@@ -19,6 +20,6 @@ export default (props) => {
         title="Unlock insights for everyone"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est tellus, pulvinar ac iaculis vel, varius eu arcu tor vestibulum."
       />
-    </div>
+    </FeatureBox>
   );
 };

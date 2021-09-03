@@ -16,7 +16,7 @@ function Header() {
             interface.
           </h3>
           <div className="hero__button">
-            <Link to="" className="hero__joinUs">
+            <Link to="/beta" className="hero__joinUs">
               <Button>Join Beta</Button>
             </Link>
             <Link to="" className="hero__viewMore">
