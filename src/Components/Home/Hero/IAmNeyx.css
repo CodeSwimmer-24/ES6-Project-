@@ -1,68 +1,112 @@
-.niyx {
-  width: 68vw;
-  margin: 0 auto;
-  background-color: white;
-  height: 60vh;
-  margin-top: -7%;
-  z-index: 99;
-  position: relative;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 20px 5px;
-  padding: 70px;
-}
 .neyx__container {
+  height: fit-content;
+  width: 70vw;
+  padding: 3em 2em;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: rgba(215, 215, 215, 0.8) 0px 3px 6em;
+  border-radius: 15px;
   display: flex;
-  padding: 20px;
-  /* margin-top: 30px; */
+  font-family: "Raleway", sans-serif;
 }
-.neyx__containerRight > img {
-  height: 368px;
-  width: 326px;
 
+.neyx__container--left {
+  width: fit-content;
+  margin: auto;
+}
+
+.neyx__container--left > img {
+  height: 22em;
+  width: 20em;
   object-fit: cover;
 }
-.neyx__containerleft > h1 {
+
+.neyx__container--right {
+  margin-left: 4em;
+}
+
+.neyx__container--right > h1 {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
-  display: flex;
-  justify-content: center;
   color: #252e39;
-  font-size: 35px;
-  font-family: "Raleway", sans-serif;
+  font-size: 2.2em;
   font-weight: 700 !important;
 }
-.neyx__containerleft > h1 span {
-  padding-top: 15px;
+
+.neyx__container--right > h1 span {
+  padding-top: 0.3em;
 }
-.neyx__containerleft > p {
-  display: flex;
-  flex-direction: column;
-  margin-left: 60px;
-  display: flex;
-  justify-content: center;
+
+.neyx__container--right > p {
+  line-height: 1.5em;
   color: #252e39;
-  font-size: 18px;
-  margin-top: 30px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 500 !important;
+  margin-top: 2em;
+  font-size: 1.1em;
 }
-.neyx__button {
-  text-decoration: none;
-}
+
 .neyx__button > button {
-  margin-left: 60px;
-  margin-top: 60px;
-  background-color: #ea2329;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 0;
-  color: white;
-  font-weight: 200;
   text-transform: initial;
-  font-family: "Raleway", sans-serif;
+  width: 15em;
+  padding: 0.8em 1.5em;
+  border: 0;
+  margin: 4em 0;
+  background-color: #ea2329;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
   cursor: pointer;
+  box-shadow: rgba(206, 206, 206, 1) 0px 3px 1em;
 }
+
 .neyx__button > button:hover {
   background-color: #252e39;
   transition: all 0.5s ease;
+}
+
+@media (max-width: 1020px) {
+  .neyx__container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 840px) {
+  .neyx__container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .neyx__container {
+    flex-direction: column;
+    padding: 1em;
+  }
+  .neyx__container--right {
+    margin: auto 1em;
+  }
+  .neyx__container--right > h1 {
+    font-size: 1.8em;
+    margin-top: 1em;
+  }
+  .neyx__button {
+    display: flex;
+    justify-content: center;
+  }
+  .neyx__button > button {
+    width: 18em;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 420px) {
+  .neyx__container {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .neyx__container--left > img {
+    height: 22em;
+    width: 100%;
+    object-fit: cover;
+  }
 }

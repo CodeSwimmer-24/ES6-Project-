@@ -1,102 +1,97 @@
 .solution {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 150px;
-  margin-bottom: 50px;
-}
-.solution > h1 {
-  font-size: 46px;
-  color: #292f45;
-  margin-top: 75px;
-  font-weight: 500;
-  text-align: center;
+  margin: 2em auto;
   font-family: "Raleway", sans-serif;
+  width: 100vw;
+  max-width: 1020px;
 }
+
+.solution > h1 {
+  margin: 1.5em auto 0;
+  text-align: center;
+  color: #292f45;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .solution__heading {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.solution__cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.solution__heading > h3 {
-  font-size: 19px;
-  color: #292f45;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: 1.2em auto;
   font-weight: 600;
-  margin-top: 20px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+}
+
+.solution__heading > h3 {
+  color: #292f45;
 }
 .solution__heading > p {
-  font-size: 16px;
   color: #ea2329;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-left: 25px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
 }
+
+.solution__cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .solution__card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 15em;
   max-width: 300px;
-  height: 270px;
-  border-left: 1px solid #292f45;
-  margin: 20px;
-  padding: 20px;
-  margin-top: 100px;
+  width: 22em;
+  padding: 1.5em;
+  margin: 1em;
+  box-shadow: rgba(215, 215, 215, 0.8) 0px 3px 6em;
+  border-radius: 15px;
 }
-.solution__card:first-child {
-  border-left: 0px !important;
+
+.solution__card > div {
+  display: flex;
 }
-.solution__card:nth-child(4) {
-  border-left: 0px !important;
+
+.solution__card > div > .MuiSvgIcon-root {
+  color: rgb(234, 111, 102);
+  font-size: 2em;
+  margin: 0.2em;
 }
-.solution__card > h3 {
-  margin: 5px 0px 15px;
-  font-size: 23px;
+
+.solution__card > div > h3 {
+  margin: auto 0.2em;
+  font-size: 1.1em;
   font-weight: 600;
   color: #292f45;
-  font-family: "Raleway", sans-serif;
 }
 .solution__card > p {
+  margin-top: 1em;
   color: #252e25;
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 40px;
+  font-size: 1.1em;
   font-family: "Roboto", sans-serif;
-  padding-top: 20px;
 }
-.solution__card > .MuiSvgIcon-root {
-  margin-top: 30px;
-  color: rgb(234, 111, 102);
-  /* color: #ea2329; */
-  font-size: 35px;
-  margin-bottom: 10px;
-}
+
 .solution__seepricing-btn {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  text-decoration: none;
+  margin-top: 1.2em;
 }
+
 .solution__seepricing-btn > button {
+  width: 15em;
+  height: 3.5em;
+  padding: 0.7em 1.5em;
   border: none;
-  background-color: #ea2329;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
+  border-radius: 5px;
   outline: none;
+  background-color: #ea2329;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
 }
+
 .solution__seepricing-btn > button:hover {
   background-color: #292f45;
   transition: all 0.5s ease;

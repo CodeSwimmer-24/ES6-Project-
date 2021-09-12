@@ -1,86 +1,77 @@
 .innovation {
-  height: 150vh;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(41, 47, 69, 0.9),
+      rgba(41, 47, 69, 0.9)
+    ),
+    url("https://www.esa.int/var/esa/storage/images/about_us/business_with_esa/19716975-3-eng-GB/Business_with_ESA_pillars.jpg");
+  width: 100vw;
+  overflow-x: hidden;
 }
-.immovation__image {
-  margin-top: 30px;
-  height: 89vh;
-  width: 100%;
+
+.innovation__image {
+  height: fit-content;
+  margin: 3em auto 1em;
+  color: #fff;
   object-fit: contain;
-  margin-top: 150px;
-  background-color: rgba(41, 47, 69, 0.9);
+  text-align: center;
 }
-.immovation__image > img {
-  width: 100%;
-  object-fit: cover;
-  height: 89vh;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.75;
+
+.innovation__image > h1 {
+  margin: 0 0.5em 1em;
+  padding-top: 2em;
+  font-size: 1.7em;
 }
-.immovation__image > h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 36px;
-  font-weight: 600;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  padding: 45px;
-  padding-top: 120px;
+
+.innovation__image > h2 {
+  font-size: 1.6em;
+  margin: auto 0.5em;
 }
-.immovation__image > h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 36px;
-  font-weight: 600;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
+
 .innovation__cards {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: -12%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .innovation__card {
-  height: 367px;
-  width: 306px;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 20px 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  height: 23em;
+  width: 20em;
+  padding: 1.5em;
+  margin: 2em 1.5em;
+  background-color: white;
+  color: #252e39;
   text-align: center;
-  padding: 20px;
+  font-family: "Raleway", sans-serif;
+  box-shadow: rgba(41, 47, 69, 0.9) 0 3px 6em;
+  border-radius: 15px;
 }
-.innovation__card > .MuiSvgIcon-root {
+
+.innovation__card > div.title {
+  display: flex;
+}
+
+.innovation__card > div.title > .MuiSvgIcon-root {
   color: rgb(234, 111, 102);
-  margin-top: 40px;
-  font-size: 35px;
+  font-size: 2.2em;
 }
-.innovation__card > h2 {
-  font-size: 23px;
-  color: #252e39;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Raleway", sans-serif;
-}
+
 .innovation__card > p {
-  font-size: 18px;
-  color: #252e39;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Raleway", sans-serif;
+  font-size: 1.1em;
+  margin: 2em 0.5em 1em;
 }
-.card__footer > h3 {
-  margin-top: 40px;
-  color: #252e39;
-  font-family: "Raleway", sans-serif;
+
+.card__footer {
+  margin-top: 1em;
 }
-.card__footer > p {
-  margin-top: 10px;
-  color: #252e39;
-  font-family: "Raleway", sans-serif;
+
+@media (max-width:375px){
+  .innovation__card {
+    width: 90vw;
+    margin: 2em 0;
+  }
 }

@@ -1,50 +1,48 @@
 import React from "react";
 import "./TeamHome.css";
-import { Link } from "react-router-dom";
-function TeamHome() {
+
+export default () => {
   return (
     <div className="team">
-      <h1>Meet our leadership team.</h1>
-      <div className="team__container">
-        <td
-          className="team__profiles"
+      <h1 className="team__title">Meet our leadership team.</h1>
+      <div className="profiles">
+        <div
+          className="profile"
           onClick={() => window.open("/team", "_blank")}
         >
-          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+          <img className="profile__photo" src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
 
-          <h3>Annel Bhusri</h3>
-          <p>Co-Founder, Co-CEO</p>
-        </td>
-        <td
-          className="team__profiles"
+          <h3 className="profile__name">Annel Bhusri</h3>
+          <p className="profile__post">Co-Founder, Co-CEO</p>
+        </div>
+        <div
+          className="profile"
           onClick={() => window.open("/team", "_blank")}
         >
-          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+          <img className="profile__photo" src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
 
-          <h3>Annel Bhusri</h3>
-          <p>Co-Founder, Co-CEO</p>
-        </td>
-        <td
-          className="team__profiles"
+          <h3 className="profile__name">Annel Bhusri</h3>
+          <p className="profile__post">Co-Founder, Co-CEO</p>
+        </div>
+        <div
+          className="profile"
           onClick={() => window.open("/team", "_blank")}
         >
-          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+          <img className="profile__photo" src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
 
-          <h3>Annel Bhusri</h3>
-          <p>Co-Founder, Co-CEO</p>
-        </td>
-        <td
-          className="team__profiles"
+          <h3 className="profile__name">Annel Bhusri</h3>
+          <p className="profile__post">Co-Founder, Co-CEO</p>
+        </div>
+        <div
+          className="profile"
           onClick={() => window.open("/team", "_blank")}
         >
-          <img src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
+          <img className="profile__photo" src="https://indiahikes.com/wp-content/uploads/2020/11/Nik-Passport-Size-Photo.jpg" />
 
-          <h3>Annel Bhusri</h3>
-          <p>Co-Founder, Co-CEO</p>
-        </td>
+          <h3 className="profile__name">Annel Bhusri</h3>
+          <p className="profile__post">Co-Founder, Co-CEO</p>
+        </div>
       </div>
     </div>
   );
-}
-
-export default TeamHome;
+};

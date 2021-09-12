@@ -1,78 +1,81 @@
 import { Link } from "react-router-dom";
-import MailIcon from "@material-ui/icons/Mail";
-import CallIcon from "@material-ui/icons/Call";
 import React from "react";
 import "./Footer.css";
-function Footer() {
+export default () => {
   return (
-    <div className="footer__container">
-      <div className="footer">
-        <div className="footer-heading footer-1">
-          <h2>About US</h2>
-          <Link className="link" to="/about">
-            Blog
-          </Link>
-          <Link className="link" to="/about">
-            Demo
-          </Link>
-          <Link className="link" to="/about">
-            Customers
-          </Link>
-          <Link className="link" to="/about">
-            Investors
-          </Link>
-          <Link className="link" to="/about">
-            Term of Service
-          </Link>
+    <footer className="footer__container">
+      <div className="footer__part part--one">
+        <h2 className="part__title">About Us</h2>
+        <Link className="footer__link" to="/about">
+          Blog
+        </Link>
+        <Link className="footer__link" to="/about">
+          Demo
+        </Link>
+        <Link className="footer__link" to="/about">
+          Customers
+        </Link>
+        <Link className="footer__link" to="/about">
+          Investors
+        </Link>
+        <Link className="footer__link" to="/about">
+          Term of Service
+        </Link>
+      </div>
+      <div className="footer__part part--two">
+        <h2 className="part__title">Contact Us</h2>
+        <Link className="footer__link" to="/job" target="_blank">
+          Job
+        </Link>
+        <Link className="footer__link" to="/about">
+          Support
+        </Link>
+        <Link className="footer__link" to="/about">
+          Verify
+        </Link>
+        <Link className="footer__link" to="/about">
+          certificate
+        </Link>
+        <Link className="footer__link" to="/about">
+          Sponsorship
+        </Link>
+      </div>
+      <div className="footer__part part--three">
+        <div className="subscribeUs">
+          <h2 className="part__title">Subscribe Us</h2>
+          <form className="subscribeUs__form">
+            <input
+              className="subscribeUs__input"
+              type="email"
+              placeholder="Enter your email"
+            />
+            <button
+              className="subscribeUs__submit"
+              type="submit"
+              value="submit"
+            >
+              Subscribe
+            </button>
+          </form>
         </div>
-        <div className="footer-heading footer-2">
-          <h2>Contact US</h2>
-          {/* <Link className="link" to="/job">
-            Job
-          </Link> */}
-          <td className="link" onClick={() => window.open("/job", "_blank")}>
-            Job
-          </td>
-          <Link className="link" to="/about">
-            Support
-          </Link>
-          <Link className="link" to="/about">
-            Verify
-          </Link>
-          <Link className="link" to="/about">
-            certificate
-          </Link>
-          <Link className="link" to="/about">
-            Sponsorship
-          </Link>
-        </div>
-        <div className="footer-heading footer-3">
-          <h2>Social Media</h2>
-          <div class="social-links">
-            <a href="#">
+        <div class="socialLinks">
+          <h2 className="part__title">Social Media</h2>
+          <div className="socialLink__container">
+            <a className="socialLink" href="/">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
+            <a className="socialLink" href="/">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="#">
+            <a className="socialLink" href="/">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#">
+            <a className="socialLink" href="/">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
         </div>
-        <div className="footer-email-form">
-          <h2>Subscribe to our newsLetter</h2>
-          <input type="email" placeholder="Enter your email..." />
-          <button type="submit" value="submit">
-            Subscribe
-          </button>
-        </div>
       </div>
-    </div>
+    </footer>
   );
-}
-
-export default Footer;
+};
