@@ -6,6 +6,7 @@ import {
   HeaderVideo,
   FormContainer,
 } from "./Header.style";
+import HeaderImage from "../../../img/betaHeader.jpg";
 import Form from "./Form";
 
 export default () => {
@@ -20,14 +21,14 @@ export default () => {
           posuere nibh lobortis et.
         </p>
 
-        <Button onClick={() => setButtonPopup(true)}>Sign Up</Button>
+        <Button onClick={() => setButtonPopup(true)}>Sign me Up</Button>
         <FormContainer id="signUpForm">
-          <Form trigger={buttonPopup} setTrigger={setButtonPopup}/>
+          <Form trigger={buttonPopup} setTrigger={setButtonPopup} />
         </FormContainer>
       </HeaderContent>
       <HeaderVideo>
         <img
-          src="https://resources.construx.com/wp-content/uploads/2016/08/video-placeholder-brain-bites.png"
+          src={HeaderImage}
           alt=""
         />
       </HeaderVideo>

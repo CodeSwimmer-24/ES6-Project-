@@ -39,7 +39,7 @@
   font-size: 18px;
   font-family: "Raleway", sans-serif;
 }
-.team__subheading > h2 {
+.team__subheading + h2 {
   color: #252e39;
   font-size: 25px;
   font-family: "Raleway", sans-serif;

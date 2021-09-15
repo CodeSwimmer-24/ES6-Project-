@@ -1,0 +1,16 @@
+.roadmap {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.roadmap__title{
+    padding: 1.5em 0 0;
+    color: #292f45;
+    text-align: center;
+}
+
+.roadmap__img {
+    max-width: 100%;
+    padding: 2em 0;
+    margin: auto;
+}

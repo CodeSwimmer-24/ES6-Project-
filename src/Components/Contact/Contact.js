@@ -20,8 +20,9 @@ function Contact() {
         </div>
         <div className="contact__peragraph">
           <p>
-            I'm a paragraph. Click here to add your own text and edit me. Let
-            your users get to know you.
+            Got any questions mate ?
+            <br />
+            Contact us today.
           </p>
         </div>
         <div className="contact__emailIcon">

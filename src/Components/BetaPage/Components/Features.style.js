@@ -12,7 +12,7 @@ export const FeatureBox = styled.div`
   display: flex;
   margin: auto;
   position: relative;
-  top: -120px;
+  /* top: -120px; */
   border-radius: 15px;
   background-color: #fff;
   border: 2px solid #5d6b8f;

@@ -29,8 +29,8 @@ function Team() {
           landscape, specializing in identifying growth opportunities and
           producing data-driven inbound strategies.
         </p>
-        <h2>We want to hear about your project or marketing goals.</h2>
       </div>
+      {/* <h2>We want to hear about your project or marketing goals.</h2>
       <div className="team__carousel">
         <Carousel breakPoints={breakPoints}>
           <Item className="team__profileImage">
@@ -67,7 +67,7 @@ function Team() {
       </div>
       <Link to="" className="work-with-us">
         <button>Work With us</button>
-      </Link>
+      </Link> */}
       <div className="team__story">
         <h1>Our Story </h1>
         <p>
@@ -126,7 +126,7 @@ function Team() {
           <p>We experience success through the success of our clients.</p>
         </div>
       </div>
-      <div className="team__journey">
+      {/* <div className="team__journey">
         <div className="team__line"></div>
         <div className="team__journey-text">
           <h1>On our journey to becoming a HubSpot Agency Partner,</h1>
@@ -143,7 +143,7 @@ function Team() {
           </p>
           <button>Work With Us</button>
         </div>
-      </div>
+      </div> */}
       <TeamMember />
       <div className="team__courceValue">
         <h1>Our Core Values</h1>

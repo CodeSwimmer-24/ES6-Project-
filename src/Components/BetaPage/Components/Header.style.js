@@ -1,27 +1,42 @@
 import styled from "styled-components";
 
 const media = {
+  largeDesktop: "@media (max-width: 1200px)",
   desktop: "@media (max-width: 960px)",
   tablet: "@media (max-width: 760px)",
   mobile: "@media (max-width: 420px)",
+  smallMobile: "@media (max-width: 340px)",
 };
 
 export const Header = styled.div`
   height: 100vh;
   width: 100vw;
   margin: auto;
-  background: rgb(158, 23, 221)
+  /* background: rgb(158, 23, 221)
     url("https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/o-saas/a97371da-o-saas-heroshot_10000000lh1fi0ot000028.png")
-    0 0 / cover no-repeat;
+    0 0 / cover no-repeat; */
+  box-shadow: rgb(215, 215, 215) 0px 3px 3em;
+
+  ${media.desktop} {
+    height: 110vh;
+  }
+
+  ${media.tablet} {
+    height: 105vh;
+  }
 `;
 
 export const HeaderContent = styled.div`
   position: absolute;
-  top: 25vh;
-  margin-left: 10vw;
+  top: 35vh;
+  margin-left: 5em;
   width: 35vw;
-  color: #fff;
+  color: #000;
   letter-spacing: 1px;
+
+  ${media.largeDesktop} {
+    top: 25vh;
+  }
 
   ${media.desktop} {
     position: relative;
@@ -56,10 +71,21 @@ export const HeaderContent = styled.div`
   }
 
   button {
-    width: 10em;
+    width: 25em;
     background-color: orangered;
     color: #fff;
-    margin: 1.5em 0.7em;
+    margin: 5em 0.7em;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    ${media.mobile} {
+      width: 18em;
+      margin: 3em 2em 5em;
+    }
+
+    ${media.smallMobile} {
+      width: 15em;
+    }
 
     :hover {
       background-color: orangered;
@@ -71,7 +97,7 @@ export const HeaderContent = styled.div`
     }
   }
 
-  .close{
+  .close {
     background-color: transparent;
     color: blue;
     margin: -2em auto 0;
@@ -91,21 +117,29 @@ export const HeaderVideo = styled.div`
   position: absolute;
   top: 20vh;
   right: 5vw;
-  width: 460px;
-  height: 360px;
+  width: 40em;
+  height: 29em;
+
+  ${media.largeDesktop} {
+    width: 30em;
+    height: 22em;
+  }
 
   ${media.desktop} {
     position: relative;
     width: 85vw;
-    height: 340px;
-    margin: 1.5em auto 0;
+    height: 20em;
+    margin: -5em auto 0;
     left: 0;
     right: 0;
   }
+  ${media.tablet} {
+    height: 18em;
+  }
 
   ${media.mobile} {
-    margin-top: 0em;
-    height: 280px;
+    /* margin-top: 0em; */
+    height: 15em;
   }
 
   img {
@@ -120,9 +154,9 @@ export const FormContainer = styled.div`
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 99;
+  z-index: 99999;
 `;

@@ -1,74 +1,126 @@
-.hero__container{
+.hero__container {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  
-}
-.hero__container{
-  background-color:white;
-  height: 80vh;
-}
-.hero__text{
-  padding:60px;
-}
-.hero__text > h1 {
-  padding-bottom: 30px;
-  font-size: 50px;
-  color: #252e39;
+  height: 70vh;
+  max-width: 1200px;
+  padding: 5em 1.5em 0;
+  margin: auto;
   font-family: "Raleway", sans-serif;
+}
+
+.hero__text {
+  padding: 2em 3em;
+}
+
+.hero__text > h1 {
+  padding-bottom: 1em;
+  font-size: 3em;
+  color: #252e39;
   font-weight: 600;
 }
+
 .hero__text > h1 > span {
   color: #ea2329;
 }
+
 .hero__text > h3 {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: 100;
   color: #252e39;
-  font-family: "Raleway", sans-serif;
 }
+
+.hero__button {
+  margin-top: 3em;
+  margin: 3em auto;
+}
+
+.hero__joinUs,
+.hero__viewMore {
+  margin-left: 1em;
+}
+
+.hero__joinUs > button,
+.hero__viewMore > button {
+  padding: 0.8em 1.8em;
+  background-color: #ea2329;
+  width: 12em;
+  color: white;
+  font-weight: 600;
+  text-transform: initial;
+  box-shadow: rgba(206, 206, 206, 0.8) 0px 1px 0.5em;
+}
+
+.hero__viewMore > button {
+  background-color: transparent;
+  color: #252e39;
+}
+
+.hero__joinUs > button:hover {
+  background-color: #252e39;
+  color: white;
+}
+
 .hero__image > img {
   padding: 30px;
   height: 50vh;
   width: 30vw;
   object-fit: cover;
 }
-.hero__button{
-  margin-top: 50px;
+
+@media (max-width: 1024px) {
+  .hero__container {
+    height: 80vh;
+  }
 }
-.hero__joinUs {
-  text-decoration: none;
+
+@media (max-width: 820px) {
+  .hero__container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .hero__text {
+    padding: 0.5em;
+  }
+  .hero__text > h1 {
+    font-size: 2em;
+    padding-bottom: 0;
+  }
+  .hero__text > h3 {
+    margin-top: 1.5em;
+    font-size: 1.2em;
+  }
+  .hero__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  .hero__image {
+    margin: auto;
+  }
+  .hero__image > img {
+    width: 70vw;
+    margin: auto;
+  }
 }
-.hero__joinUs > button {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color:  #ea2329;
-  color: white ;
-  font-weight: 600;
-  text-transform: initial;
-  font-family: "Raleway", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px 5px;
-}
-.hero__joinUs > button:hover {
-  background-color:#252e39 ;
-  color: white;
-}
-.hero__viewMore{
-  text-decoration: none;
-  margin-left: 20px;
-}
-.hero__viewMore > button{
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border:1px solid #252e39;
-  color: #252e39 ;
-  background-color: transparent;
-  font-weight: 600;
-  text-transform: initial;
-  font-family: "Raleway", sans-serif;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 20px 5px;
+
+@media (max-width: 420px) {
+  .hero__container {
+    width: 100vw;
+  }
+  .hero__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero__joinUs,
+  .hero__viewMore {
+    margin-left: 0;
+  }
+  .hero__joinUs > button,
+  .hero__viewMore > button {
+    padding: 0.8em 1em;
+    width: 18em;
+    margin: 1em;
+  }
 }

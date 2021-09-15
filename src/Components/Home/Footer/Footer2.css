@@ -1,16 +1,15 @@
 .footer2 {
-  /* margin-top: 100px; */
-  height: 13vh;
-  width: 100%;
-  background-color: #252e39;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 5em;
+  width: 100vw;
+  background-color: #252e39;
   color: white;
-}
-.footer2 > h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 5px;
+  letter-spacing: 2px;
+}
+
+.footer2 > p{
+  margin-left: 0.5em;
 }
