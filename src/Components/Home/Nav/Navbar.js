@@ -2,6 +2,7 @@ import { Button } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import Logo from "../../../img/logo-dark.svg"
 
 export default () => {
   const [click, setClick] = useState(false);
@@ -42,9 +43,10 @@ export default () => {
     <nav className={navbar ? "navbar active" : "navbar"}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          <h2>
+          {/* <h2>
             Ney <i>X</i>
-          </h2>
+          </h2> */}
+          <img className="logoImage" src={Logo} alt="" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <li className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -71,7 +73,7 @@ export default () => {
               About
             </NavLink>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <NavLink
               to="/service"
               className="nav-links "
@@ -80,8 +82,18 @@ export default () => {
             >
               Service & Pricing
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav-item">
+            <NavLink
+              to="/beta"
+              className="nav-links "
+              onClick={closeMobleMenu}
+              activeClassName="main-nav-active"
+            >
+              Join Beta
+            </NavLink>
+          </li>
+          {/* <li className="nav-item">
             <NavLink
               to="/demo"
               className="nav-links "
@@ -89,6 +101,16 @@ export default () => {
               activeClassName="main-nav-active"
             >
               Demo
+            </NavLink>
+          </li> */}
+          <li className="nav-item">
+            <NavLink
+              to="/team"
+              className="nav-links "
+              onClick={closeMobleMenu}
+              activeClassName="main-nav-active"
+            >
+              Team
             </NavLink>
           </li>
           <li className="nav-item">

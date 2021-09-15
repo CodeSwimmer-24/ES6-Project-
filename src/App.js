@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./ScrolltoTop";
 import About from "./Components/About/About";
 import Team from "./Components/Team/Team";
 import Contact from "./Components/Contact/Contact";
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route path="/beta">
             <Navbar />

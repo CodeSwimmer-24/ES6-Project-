@@ -18,7 +18,7 @@ export default () => {
           <Link to="/beta" className="hero__joinUs">
             <Button>Join Beta</Button>
           </Link>
-          <Link to="" className="hero__viewMore">
+          <Link to="/about" className="hero__viewMore">
             <Button>View More</Button>
           </Link>
         </div>

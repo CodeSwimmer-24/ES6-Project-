@@ -11,12 +11,12 @@ export default () => {
       <div className="neyx__container--right">
         <h1>
           Hi, I'm NeyX,
-          <span> Skilled Administrative and Support Professional</span>
+          <span>a Smart intelligent Bargaining bot</span>
         </h1>
         <p>
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.{" "}
+          From interacting with your customers in real time to bargain with them
+          and from making your regular sales to an increased number of sales, I
+          am your go-to guy.
         </p>
         <Link to="/about" className="neyx__button">
           <Button>Read More</Button>

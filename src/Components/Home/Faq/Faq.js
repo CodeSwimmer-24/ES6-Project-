@@ -1,6 +1,7 @@
-import React from "react";
+import { React, useState } from "react";
 import "./Faq.css";
 export default () => {
+  const [readMore, setReadMore] = useState(false);
   return (
     <div className="faq__container">
       <h1 className="faq__heading">FAQ's</h1>
@@ -37,6 +38,13 @@ export default () => {
             just like any other library.
           </p>
         </div>
+      </div>
+      <div className="readMore">
+        <button className={readMore ? "readMore__button hidden": "readMore__button"} onClick={() => setReadMore(true)}>
+          Read More...
+        </button>
+      </div>
+      <div className={readMore ? "faqs": "faqs hidden"}>
         <div className="faq">
           <h2 className="faq__title">
             What all data would be required from us?
@@ -85,11 +93,10 @@ export default () => {
           </p>
         </div>
       </div>
-      <div className="faq__image__container">
-        <img
-          className="faq__image"
-          src="https://img2.helpnetsecurity.com/posts/airdroid.png"
-        />
+      <div className="readMore">
+        <button className={readMore ? "readMore__button": "readMore__button hidden"} onClick={() => setReadMore(false)}>
+          Collapse
+        </button>
       </div>
     </div>
   );

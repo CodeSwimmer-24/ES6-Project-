@@ -35,30 +35,24 @@
   font-size: 1.2em;
 }
 
-.faq__image__container {
-  display: flex;
-  justify-content: center;
+.hidden {
+  display: none;
+}
+
+.readMore {
+  position: relative;
   max-width: 960px;
+  padding: 1em 0;
   margin: auto;
 }
 
-.faq__image {
-  max-height: 15em;
-  max-width: 15em;
-  padding: 0 1em 1em;
-}
-
-@media (min-width: 375px) {
-  .faq__image {
-    max-height: 18em;
-    max-width: 18em;
-  }
-}
-
-@media (min-width: 768px) {
-  .faq__image {
-    max-height: 25em;
-    max-width: 25em;
-    padding: 1em 2em;
-  }
-}
+.readMore__button {
+  position: absolute;
+  right: 5em;
+  bottom: 1em;
+  border: none;
+  background-color: transparent;
+  color: #252e39;
+  font-weight: 600;
+  cursor: pointer;
+} 

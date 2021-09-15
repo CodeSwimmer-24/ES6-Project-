@@ -3,6 +3,7 @@ import Navbar from "./Nav/Navbar";
 import Header from "./Hero/Header";
 import IAmNiyx from "./Hero/IAmNiyx";
 import Solution from "./Solution/Solution";
+import Roadmap from "./Roadmap/Roadmap";
 import Innovation from "./Innovation/Innovation";
 import Faq from "./Faq/Faq";
 import TeamHome from "./TeamHome/TeamHome";
@@ -16,9 +17,10 @@ export default () => {
       <Header />
       <IAmNiyx />
       <Solution />
+      <Roadmap />
       <Innovation />
       <Faq />
-      <TeamHome />
+      {/* <TeamHome /> */}
       <Footer />
       <Footer2 />
     </div>

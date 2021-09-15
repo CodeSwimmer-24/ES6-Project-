@@ -1,6 +1,12 @@
 import React from "react";
 import "./TeamMember.css";
-function TeamMember() {
+import teamdata from "../../img/teams.json";
+import { data } from "dom7";
+
+export default () => {
+  fetch(teamdata)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
   return (
     <div className="teamMember__page">
       <div className="teamMenber__hedding">
@@ -25,6 +31,36 @@ function TeamMember() {
               significantly more value to his employers and customers than
               anyone else in the field
             </h4>
+            <div className="teamSocialLinks">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f socialIcon" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin-in socialIcon" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div className="profile2">
@@ -43,6 +79,42 @@ function TeamMember() {
                 significantly more value to his employers and customers than
                 anyone else in the field
               </h4>
+              <div className="teamSocialLinks">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fab fa-facebook-f socialIcon"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fab fa-linkedin-in socialIcon"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div className="profile__right">
@@ -55,6 +127,42 @@ function TeamMember() {
                 significantly more value to his employers and customers than
                 anyone else in the field
               </h4>
+              <div className="teamSocialLinks">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fab fa-facebook-f socialIcon"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fab fa-linkedin-in socialIcon"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
             <div className="profile1__image2">
               <img src="https://i.pinimg.com/474x/0c/14/46/0c144667b3878ee3cb7316e2081f174a--mens-fashion-week-fashion-weeks.jpg" />
@@ -67,25 +175,143 @@ function TeamMember() {
           <img src="https://static.wixstatic.com/media/6b4b47_0afd71d28dc24a58a93c0d68254fe71f~mv2.jpg/v1/fill/w_640,h_956,fp_0.50_0.50,q_90/6b4b47_0afd71d28dc24a58a93c0d68254fe71f~mv2.jpg" />
           <h2>Bree Schmidt</h2>
           <p>SEO & WEB ANALYTICS </p>
+          <div className="teamSocialLinks">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
         <div className="profile3">
           <img src="https://www.ofih.com.my/wp-content/uploads/2018/01/img-team-member-career-03.jpg" />
           <h2>Bree Schmidt</h2>
           <p>CONTENT STRATEGIST</p>
+          <div className="teamSocialLinks">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
         <div className="profile3">
           <img src="https://davidemphotography.com/wp-content/uploads/2019/08/Mens-Fashion-Influencer-Photoshoot-in-Seattle-4.jpg" />
           <h2>EDITORIAL MANAGER</h2>
           <p>HEAD OF DEVELOPMENT</p>
+          <div className="teamSocialLinks">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
         <div className="profile3">
           <img src="https://nextluxury.com/wp-content/uploads/Scarves-Fashion-Accessories-For-Men.jpg" />
           <h2>Bree Schmidt</h2>
           <p>EDITORIAL MANAGER</p>
+          <div className="teamSocialLinks">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-facebook-f socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-instagram socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin-in socialIcon" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-link socialIcon" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
-}
-
-export default TeamMember;
+};
