@@ -59,9 +59,30 @@ import ValidationComp from "./ValidationComp";
 import Char from "./Char";
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log("App.js constructor");
+
+    // this.state = {
+
+    // }
+  }
   state = {
     text: "",
   };
+
+  static getDerivedStateFromProps(props, state) {
+    console.log("App.js getDerivedStateFromProps", props);
+    return state;
+  }
+
+  // componentWillMount() {
+  //   console.log("Component Will mount");
+  // }
+
+  componentDidMount() {
+    console.log("Component Did mount");
+  }
 
   handleChange = (e) => {
     const text = e.target.value;
@@ -76,6 +97,7 @@ export default class App extends Component {
   };
 
   render() {
+    console.log("App.js Render");
     const charList = this.state.text.split("").map((c, i) => {
       return <Char click={() => this.remove(i)} key={i} chr={c} />;
     });

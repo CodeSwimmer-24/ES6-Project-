@@ -1,0 +1,32 @@
+  
+  
+  =================Components Creation LifeCycle=======================
+
+only available in class-based comp 
+
+1.> constructor(props)
+ 
+ -> Call super(props) Do- Set-up state
+
+2.> getDerivedStateFromProps(props,state)
+
+ -> Do- Sync state 
+
+3.> render()
+
+ -> Prepare and structure your JSX code 
+
+4.> Render child components 
+
+5.> componentDidMount() 
+
+  =================Components Update LifeCycle========================
+
+  when props or state change 
+
+  1.> getDerivedStateFromProps(props,state)
+  2.> shouldComponentUpdate(nextProps, nextProps)
+  3.> render()
+  4.> update child component props
+  5.> getSnapShotBeforeUpdate(prevProps,prevState)
+  6.> componentDidUpdate()
