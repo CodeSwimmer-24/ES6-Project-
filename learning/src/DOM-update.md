@@ -67,3 +67,48 @@ return (
     />
 )
 }
+
+<!--  [[[[[[[[[[[[[    CONTEXT API    ]]]]]]]]]]]]]  -->
+
+If we want to pass props from A to C without help of B then we use this context API
+
+<!-- context.js  -->
+
+import React from "React";
+
+const authContext = React.createContext({
+authenticated: false,
+login: () => {},
+});
+
+export default authContext;
+
+<!-- App.js -->
+
+import context from "./context";
+
+[[File in which we have to use context provider we have to wrap the component in which we have to pass the props]]
+
+<Context.Provider value={{authenticated: this.state.authenticated,
+                         login: this.loginHandle}}>
+<Cockpit title={this.props.title}
+    name={this.props.name} />
+</Context.provider>
+
+<!-- Persons.js -->
+
+import context from "./context";
+
+<Context.Consumer>
+{(context) => context.authenticated ? <p>authenticated</p> : <p>Please authenticated</p> }
+</Context.Consumer>
+
+<!-- Cockpit.js -->
+
+import context from "./context";
+
+<Context.Consumer>
+{(context) => {
+<button onClick={context.login}>Login</button>
+}}
+</Context.Consumer>

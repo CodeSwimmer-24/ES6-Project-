@@ -72,6 +72,7 @@
 import React, { Component } from "react";
 import ValidationComp from "./ValidationComp";
 import Char from "./Char";
+import AuthContext from "./context/auth-context";
 
 export default class App extends Component {
   constructor(props) {
@@ -139,8 +140,12 @@ export default class App extends Component {
           onChange={this.handleChange}
           value={this.state.text}
         />
-        <ValidationComp text={this.state.text.length} />
-        {charList}
+        <AuthContext.Provider
+          value={{ authenticated: this.state.authenticated }}
+        >
+          <ValidationComp text={this.state.text.length} />
+          {charList}
+        </AuthContext.Provider>
       </div>
     );
   }
