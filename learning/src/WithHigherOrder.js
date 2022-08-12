@@ -1,3 +1,5 @@
+// <-- Old Method -->
+
 // import React from "react";
 
 // function WithHigherOrder(props) {

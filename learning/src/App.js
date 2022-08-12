@@ -69,84 +69,125 @@
 // // export default WithHigherOrder(App, classes.App);
 // export default App;
 
+// import React, { Component } from "react";
+// import ValidationComp from "./ValidationComp";
+// import Char from "./Char";
+// import AuthContext from "./context/auth-context";
+
+// export default class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     console.log("App.js constructor");
+
+//     // this.state = {
+
+//     // }
+//   }
+//   state = {
+//     text: "",
+//     count: 0,
+//   };
+
+//   static getDerivedStateFromProps(props, state) {
+//     console.log("App.js getDerivedStateFromProps", props);
+//     return state;
+//   }
+
+// componentWillMount() {
+//   console.log("Component Will mount");
+// }
+
+//   componentDidMount() {
+//     console.log("Component Did mount");
+//   }
+
+//   componentDidUpdate(prevProps, prevState, snapShot) {
+//     console.log("Component Did Update");
+//     console.log(snapShot);
+//   }
+
+//   handleChange = (e) => {
+//     const text = e.target.value;
+//     this.setState({ text: text });
+
+//     // this.setState({ count: this.state.count + 1 });
+
+//     // Way to write state when we are dependent on old state
+//     this.setState((prevState, props) => {
+//       return {
+//         count: prevState.count + 1,
+//       };
+//     });
+//   };
+
+//   remove = (i) => {
+//     const txt = this.state.text.split("");
+//     txt.splice(i, 1);
+//     const UpdateText = txt.join("");
+//     this.setState({ text: UpdateText });
+//   };
+
+//   render() {
+//     console.log("App.js Render");
+//     const charList = this.state.text.split("").map((c, i) => {
+//       return <Char click={() => this.remove(i)} key={i} chr={c} />;
+//     });
+
+//     return (
+//       <div>
+//         <input
+//           type="text"
+//           onChange={this.handleChange}
+//           value={this.state.text}
+//         />
+//         <AuthContext.Provider
+//           value={{ authenticated: this.state.authenticated }}
+//         >
+//           <ValidationComp text={this.state.text.length} />
+//           {charList}
+//         </AuthContext.Provider>
+//       </div>
+//     );
+//   }
+// }
+
 import React, { Component } from "react";
-import ValidationComp from "./ValidationComp";
-import Char from "./Char";
-import AuthContext from "./context/auth-context";
+import Login from "./components/component1/Login";
+import Profile from "./components/component1/Profile";
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    console.log("App.js constructor");
+export const AuthContext = React.createContext({
+  isAuth: false,
+  toogleAuth: () => {},
+});
 
-    // this.state = {
-
-    // }
-  }
+class App extends Component {
   state = {
-    text: "",
-    count: 0,
+    isAuth: false,
   };
 
-  static getDerivedStateFromProps(props, state) {
-    console.log("App.js getDerivedStateFromProps", props);
-    return state;
-  }
+  // toogleAuth = () => {
+  //   this.setState((prevState) => {
+  //     return {
+  //       isAuth: !prevState.isAuth,
+  //     };
+  //   });
+  // };
 
-  // componentWillMount() {
-  //   console.log("Component Will mount");
-  // }
-
-  componentDidMount() {
-    console.log("Component Did mount");
-  }
-
-  componentDidUpdate(prevProps, prevState, snapShot) {
-    console.log("Component Did Update");
-    console.log(snapShot);
-  }
-
-  handleChange = (e) => {
-    const text = e.target.value;
-    this.setState({ text: text });
-
-    // this.setState({ count: this.state.count + 1 });
-
-    // Way to write state when we are dependent on old state
-    this.setState((prevState, props) => {
-      return {
-        count: prevState.count + 1,
-      };
-    });
-  };
-
-  remove = (i) => {
-    const txt = this.state.text.split("");
-    txt.splice(i, 1);
-    const UpdateText = txt.join("");
-    this.setState({ text: UpdateText });
+  toogleAuth = () => {
+    const changeAuth = this.state.isAuth;
+    this.setState({ isAuth: !changeAuth });
   };
 
   render() {
-    console.log("App.js Render");
-    const charList = this.state.text.split("").map((c, i) => {
-      return <Char click={() => this.remove(i)} key={i} chr={c} />;
-    });
-
     return (
-      <div>
-        <input
-          type="text"
-          onChange={this.handleChange}
-          value={this.state.text}
-        />
-        <AuthContext.Provider
-          value={{ authenticated: this.state.authenticated }}
-        >
-          <ValidationComp text={this.state.text.length} />
-          {charList}
-        </AuthContext.Provider>
-      </div>
+      <AuthContext.Provider
+        value={{ isAuth: this.state.isAuth, toogleAuth: this.toogleAuth }}
+      >
+        <Login />
+        <Profile />
+      </AuthContext.Provider>
     );
   }
 }
+
+export default App;

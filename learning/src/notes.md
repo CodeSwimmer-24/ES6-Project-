@@ -21,7 +21,7 @@ Higher order components are the components thats wrap others components and does
 
 };
 
-<!-- -------PROPS TYPE -------------- -->
+<!-- -------PROPS TYPE Validations -------------- -->
 
 {it use to pass correct props by defining props type and value.}
 
@@ -89,26 +89,48 @@ import context from "./context";
 
 [[File in which we have to use context provider we have to wrap the component in which we have to pass the props]]
 
-<Context.Provider value={{authenticated: this.state.authenticated,
+<AuthContext.Provider value={{authenticated: this.state.authenticated,
                          login: this.loginHandle}}>
 <Cockpit title={this.props.title}
     name={this.props.name} />
-</Context.provider>
+</AuthContext.provider>
 
 <!-- Persons.js -->
 
-import context from "./context";
+import authContext from "./context";
 
-<Context.Consumer>
-{(context) => context.authenticated ? <p>authenticated</p> : <p>Please authenticated</p> }
-</Context.Consumer>
+<AuthContext.Consumer>
+{(context) => authContext.authenticated ? <p>authenticated</p> : <p>Please authenticated</p> }
+</AuthContext.Consumer>
 
 <!-- Cockpit.js -->
 
-import context from "./context";
+import authContext from "./context";
 
-<Context.Consumer>
-{(context) => {
+<AuthContext.Consumer>
+{(authContext) => {
 <button onClick={context.login}>Login</button>
 }}
-</Context.Consumer>
+</AuthContext.Consumer>
+
+<!-- using context in class based component in componentDidMount -->
+
+static contextType = AuthContext;
+
+componentDidMount() {
+console.log(this.context.authentication)
+}
+
+<!-- using context in functional based component in useContext -->
+
+const authContext = useContext(AuthContext);
+
+console.log(authContext)
+
+<button onClick={authContext.login}>Login</button>
+
+<!-- React Memo -->
+
+export default React.memo(LoginPage)
+
+React.memo is a higher order component. If your component renders the same result given the same props, you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result.
