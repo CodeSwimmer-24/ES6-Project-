@@ -133,4 +133,5 @@ console.log(authContext)
 
 export default React.memo(LoginPage)
 
-React.memo is a higher order component. If your component renders the same result given the same props, you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result.
+React.memo is a higher order component. If your component renders the same result given the same props,
+you can wrap it in a call to React.memo for a performance boost in some cases by memoizing the result.

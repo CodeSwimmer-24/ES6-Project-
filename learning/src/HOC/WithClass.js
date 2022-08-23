@@ -9,3 +9,5 @@ const withClass = (WrapperClass, className) => {
 };
 
 export default withClass;
+
+// {...props} -> Its means that to pass props without changing anything 

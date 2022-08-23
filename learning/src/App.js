@@ -38,19 +38,19 @@
 
 //   let person;
 
-//   if (showPerson) {
-//     person = (
-//       <div>
-//         <h1>
-//           {personState.person.map((per, i) => {
-//             return ` ${i + 1} >  Hello my name is ${per.name} and my age is ${
-//               per.age
-//             }`;
-//           })}
-//         </h1>
-//       </div>
-//     );
-//   }
+// if (showPerson) {
+//   person = (
+//     <div>
+//       <h1>
+//         {personState.person.map((per, i) => {
+//           return ` ${i + 1} >  Hello my name is ${per.name} and my age is ${
+//             per.age
+//           }`;
+//         })}
+//       </h1>
+//     </div>
+//   );
+// }
 
 //   return (
 //     <>
