@@ -2,12 +2,19 @@ import React from "react";
 import BurgerItems from "./BurgerItems/BurgerItems";
 
 function Burger(props) {
-  const transformIngredients = Object.keys(props.ingredients).map((igKey) => {
-    console.log(props.ingredients);
-    return [...Array(props.ingredients[igKey])].map((_, i) => {
-      return <BurgerItems key={igKey + i} type={igKey} />;
-    });
-  });
+  let transformIngredients = Object.keys(props.ingredients)
+    .map((igKey) => {
+      return [...Array(props.ingredients[igKey])].map((_, i) => {
+        return <BurgerItems key={igKey + i} type={igKey} />;
+      });
+    })
+    .reduce((arr, el) => {
+      return arr.concat(el);
+    }, []);
+
+  if (transformIngredients.length === 0) {
+    transformIngredients = <p> Please select the ingredient </p>;
+  }
 
   return (
     <div
