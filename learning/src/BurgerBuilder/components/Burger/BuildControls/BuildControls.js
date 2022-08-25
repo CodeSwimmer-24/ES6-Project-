@@ -12,9 +12,21 @@ const controls = [
 function BuildControls(props) {
   return (
     <div className="BuildControl">
+      <p>Current Price: {props.pricing.toFixed(2)} </p>
       {controls.map((ctrl) => {
-        return <BuildControl key={ctrl.label} label={ctrl.label} />;
+        return (
+          <BuildControl
+            key={ctrl.label}
+            label={ctrl.label}
+            added={() => props.ingredientAdded(ctrl.type)}
+            remove={() => props.ingredientRemove(ctrl.type)}
+            disabled={props.disableBtn[ctrl.type]}
+          />
+        );
       })}
+      <button disabled={!props.orderBtn} onClick={props.onShow}>
+        ORDER NOW
+      </button>
     </div>
   );
 }
