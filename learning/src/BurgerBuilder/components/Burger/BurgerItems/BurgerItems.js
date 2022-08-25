@@ -17,7 +17,7 @@ function BurgerItems(props) {
         </div>
       );
       break;
-    case "meet":
+    case "meat":
       ingredient = <div className="Meat"></div>;
       break;
     case "cheese":
