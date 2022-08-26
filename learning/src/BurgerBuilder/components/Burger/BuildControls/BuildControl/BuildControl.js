@@ -4,12 +4,23 @@ import "./BuildControl.css";
 const BuildControl = (props) => (
   <div className="BuildControl">
     <div className="Label">{props.label}</div>
-    <button className="Button" onClick={props.remove} disabled={props.disabled}>
-      Less
-    </button>
-    <button className="Button" onClick={props.added}>
-      More
-    </button>
+    <div style={{ display: "flex" }}>
+      <button
+        className="Button"
+        onClick={props.remove}
+        disabled={props.disabled}
+        style={{ background: "#d9a875", color: "red" }}
+      >
+        Less
+      </button>
+      <button
+        className="Button"
+        onClick={props.added}
+        style={{ background: "#d9a875", color: "green" }}
+      >
+        More
+      </button>
+    </div>
   </div>
 );
 
