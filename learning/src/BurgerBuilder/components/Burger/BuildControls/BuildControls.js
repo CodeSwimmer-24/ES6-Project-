@@ -24,7 +24,11 @@ function BuildControls(props) {
           />
         );
       })}
-      <button disabled={!props.orderBtn} onClick={props.onShow}>
+      <button
+        disabled={!props.orderBtn}
+        onClick={props.onShow}
+        style={{ background: "black", color: "white", padding: "8px" }}
+      >
         ORDER NOW
       </button>
     </div>
