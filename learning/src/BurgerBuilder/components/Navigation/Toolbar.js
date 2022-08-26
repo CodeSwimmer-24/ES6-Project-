@@ -1,0 +1,15 @@
+import React from "react";
+import Logo from "../Logo/Logo";
+import "./Toolbar.css";
+
+function Toolbar() {
+  return (
+    <header className="Toolbar">
+      <div>Menu</div>
+      <Logo />
+      <nav>...</nav>
+    </header>
+  );
+}
+
+export default Toolbar;

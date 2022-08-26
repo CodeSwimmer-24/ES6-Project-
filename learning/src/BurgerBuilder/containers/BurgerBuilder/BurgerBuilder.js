@@ -77,6 +77,14 @@ export default class BurgerBuilder extends Component {
     this.setState({ show: !view });
   };
 
+  remove = () => {
+    this.setState({ show: false });
+  };
+
+  continue = () => {
+    alert("Are you sure");
+  };
+
   render() {
     const disableBtn = {
       ...this.state.ingredients,
@@ -89,8 +97,13 @@ export default class BurgerBuilder extends Component {
     return (
       <Aux>
         {this.state.show ? (
-          <Model>
-            <OrderSummary ingredients={this.state.ingredients} />
+          <Model show={this.show} modalClosed={this.remove}>
+            <OrderSummary
+              cancel={this.remove}
+              ingredients={this.state.ingredients}
+              continue={this.continue}
+              pricing={this.state.totalPrice}
+            />
           </Model>
         ) : null}
         <Burger ingredients={this.state.ingredients} />
