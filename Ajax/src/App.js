@@ -1,12 +1,13 @@
-import logo from "./logo.svg";
-import "./App.css";
 import Blog from "./container/Blog/Blog";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Blog />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Blog />
+      </div>
+    </BrowserRouter>
   );
 }
 
