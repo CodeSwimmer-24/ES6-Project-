@@ -5,9 +5,13 @@ import Backdrop from "../Backdrop/Backdrop";
 
 class Model extends Component {
   shouldComponentUpdate(nextProps, nextState) {
-    if (nextProps.show !== this.props.show) {
-      return true;
-    }
+    // if (nextProps.show !== this.props.show) {
+    //   return true;
+    // }
+    return (
+      nextProps.show !== this.props.show ||
+      nextProps.children !== this.props.children
+    );
   }
   componentDidMount() {
     console.log("[Model] Will Mount");
@@ -16,7 +20,17 @@ class Model extends Component {
     return (
       <Aux>
         <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
-        <div className="Modal">{this.props.children}</div>
+        <div
+          className="Modal"
+          style={{
+            transparent: this.props.show
+              ? "transparentY(0)"
+              : "transparentY(0)",
+            opacity: this.props.show ? "1" : "0",
+          }}
+        >
+          {this.props.children}
+        </div>
       </Aux>
     );
   }
