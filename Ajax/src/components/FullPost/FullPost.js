@@ -6,14 +6,23 @@ export default class FullPost extends Component {
   state = {
     loadedPosts: null,
   };
+  componentDidMount() {
+    this.loadData();
+  }
+
   componentDidUpdate() {
-    if (this.props.id) {
+    this.loadData();
+  }
+
+  loadData() {
+    if (this.props.match.params.id) {
       if (
         !this.props.loadedPosts ||
-        (this.state.loadedPosts && this.state.loadedPosts.id !== this.props.id)
+        (this.state.loadedPosts &&
+          this.state.loadedPosts.match.params.id != this.props.match.params.id)
       ) {
         axios
-          .get(`/posts/${this.props.id}`)
+          .get(`/posts/${this.props.match.params.id}`)
           .then((response) => {
             this.setState({ loadedPosts: response.data });
           })
@@ -25,9 +34,11 @@ export default class FullPost extends Component {
   }
 
   deletePostMethod = () => {
-    axios.delete(`/posts/${this.props.id}`).then((res) => {
-      console.log(res);
-    });
+    axios
+      .delete(`/posts/${this.props.match.params.match.params.id}`)
+      .then((res) => {
+        console.log(res);
+      });
   };
 
   render() {
