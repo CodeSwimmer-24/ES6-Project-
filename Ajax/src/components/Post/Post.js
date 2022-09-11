@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import "./Post.css";
 
 function Post(props) {
@@ -16,4 +17,4 @@ function Post(props) {
   );
 }
 
-export default Post;
+export default withRouter(Post);
