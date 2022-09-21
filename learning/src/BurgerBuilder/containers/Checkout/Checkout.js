@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 import CheckoutSummary from "../../components/Order/CheckoutSummary/CheckoutSummary";
 
-export default class Checkout extends Component {
+class Checkout extends Component {
   state = {
     ingredients: {
       salad: 1,
@@ -10,11 +11,39 @@ export default class Checkout extends Component {
       bacon: 1,
     },
   };
+
+  componentDidMount() {
+    console.log(this.props);
+  }
+
+  checkoutCancelledHandler = () => {
+    this.props.history.goBack();
+  };
+
+  checkoutContinuedHandler = () => {
+    this.props.history.replace("/checkout/contact-data");
+  };
+
+  componentDidMount() {
+    console.log(this.props);
+    const query = new URLSearchParams(this.props.location.search);
+    const ingredients = {};
+    for (let param of query.entries()) {
+      ingredients[param[0]] = +param[1];
+    }
+    this.setState({ ingredients: ingredients });
+  }
   render() {
     return (
       <div>
-        <CheckoutSummary ingredients={this.state.ingredients} />
+        <CheckoutSummary
+          checkoutCancelled={this.checkoutCancelledHandler}
+          checkoutContinued={this.checkoutContinuedHandler}
+          ingredients={this.state.ingredients}
+        />
       </div>
     );
   }
 }
+
+export default withRouter(Checkout);
