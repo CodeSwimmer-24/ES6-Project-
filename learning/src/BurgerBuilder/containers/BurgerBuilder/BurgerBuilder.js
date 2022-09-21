@@ -7,6 +7,7 @@ import Aux from "../../HOC/Aux";
 import axios from "../../../axios-orders";
 import Spinner from "../../components/UI/spinner/Spinner";
 import withErrorHandler from "../../HOC/withErrorHandler";
+import { withRouter } from "react-router-dom";
 
 const INGREDIENT_PRICE = {
   salad: 0.5,
@@ -25,6 +26,7 @@ class BurgerBuilder extends Component {
   };
 
   componentDidMount() {
+    console.log(this.props);
     axios
       .get("https://burger-9265c-default-rtdb.firebaseio.com/ingredients.json")
       .then((res) => {
@@ -93,29 +95,42 @@ class BurgerBuilder extends Component {
 
   continue = () => {
     // alert("Are you sure");
-    this.setState({ loading: true });
-    const order = {
-      ingredients: this.state.ingredients,
-      pricing: this.state.totalPrice,
-      customer: {
-        name: "Fahad",
-        address: {
-          street: "Street no 10",
-          zip: "416152",
-          country: "India",
-        },
-        email: "fahad@gmail.com",
-      },
-    };
-    axios
-      .post("/orders.json", order)
-      .then((response) => {
-        this.setState({ loading: false, show: false });
-      })
-      .catch((err) => {
-        this.setState({ loading: false, show: false });
-        console.log(err);
-      });
+    // this.setState({ loading: true });
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   pricing: this.state.totalPrice,
+    //   customer: {
+    //     name: "Fahad",
+    //     address: {
+    //       street: "Street no 10",
+    //       zip: "416152",
+    //       country: "India",
+    //     },
+    //     email: "fahad@gmail.com",
+    //   },
+    // };
+    // axios
+    //   .post("/orders.json", order)
+    //   .then((response) => {
+    //     this.setState({ loading: false, show: false });
+    //   })
+    //   .catch((err) => {
+    //     this.setState({ loading: false, show: false });
+    //     console.log(err);
+    //   });
+    const queryParams = [];
+    for (let i in this.state.ingredients) {
+      queryParams.push(
+        encodeURIComponent(i) +
+          "=" +
+          encodeURIComponent(this.state.ingredients[i])
+      );
+    }
+    const queryString = queryParams.join("&");
+    this.props.history.push({
+      pathname: "/checkout",
+      search: "?" + queryString,
+    });
   };
 
   render() {
@@ -162,4 +177,4 @@ class BurgerBuilder extends Component {
   }
 }
 
-export default withErrorHandler(BurgerBuilder, axios);
+export default withRouter(BurgerBuilder, axios);
