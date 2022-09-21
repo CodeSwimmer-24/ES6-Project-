@@ -11,11 +11,11 @@ class App extends Component {
         <BrowserRouter>
           <Layout>
             <Switch>
-              <Route path="/">
-                <BurgerBuilder />
-              </Route>
               <Route path="/checkout">
                 <Checkout />
+              </Route>
+              <Route exact path="/">
+                <BurgerBuilder />
               </Route>
             </Switch>
           </Layout>
